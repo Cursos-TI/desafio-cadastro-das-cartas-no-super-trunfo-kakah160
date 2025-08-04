@@ -10,6 +10,9 @@ int main(){
     int pontosTuristicos;
     float area;
     float pib;
+    /*
+    divisão (/)
+    */
 
     printf("digite seu estado: \n");
     scanf("%s", estado);
@@ -40,6 +43,15 @@ int main(){
     printf("area: %f \n", area);
     printf("pib: %f \n", pib);
     printf("pontos Turisticos: %d \n", pontosTuristicos);
+
+divisao = população / area;
+   printf("habitantes por area: %f\n", divisao);
+
+divisao = pib / população;
+   printf("PIB per capita: %f\n", divisao);
+   pib / população;
+
+
 
     return 0;
 }
