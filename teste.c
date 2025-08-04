@@ -3,52 +3,44 @@
 int main(){
     printf("desafio super trunfo\n");
     printf("novo commit\n");
-    char estado;
-    char codigo;
-    char cidade;
+    char estado[10];
+    char codigo [5];
+    char cidade [50];
     int população;
+    int pontosTuristicos;
     float area;
-    float pib
-    int pontos Turisticos;
+    float pib;
 
-     for (int i = 0; i < 2; i++) {
-        printf("\n--- Cadastro da Carta %d ---\n", i + 1);
+    printf("digite seu estado: \n");
+    scanf("%s", estado);
 
-        printf("Estado (letra de A a H): ");
-        scanf(" %c", &cartas [i].estado);
-        // espaço antes do %c para ignorar enter
+    printf("codigo: \n");
+    scanf("%s", codigo);
 
-        printf("Código da Carta (ex: A01): ");
-        scanf("%s", &cartas[i].codigo);
+    printf("nome da cidade: \n");
+    scanf("%s", cidade);
 
-        printf("Nome da Cidade: ");
-        scanf(" %[^\n]", cartas[i].cidade); // lê até o enter, inclusive espaços
+    printf("total de habitantes: \n");
+    scanf("%d", &população);
 
-        printf("População: ");
-        scanf("%d", &cartas[i].populacao);
+    printf("area: \n");
+    scanf("%f", &area);
 
-        printf("Área (km²): ");
-        scanf("%f", &cartas[i].area);
+    printf("pib: \n");
+    scanf("%f", &pib);
 
-        printf("PIB (em bilhões): ");
-        scanf("%f", &cartas[i].pib);
+    printf("pontos turisticos: \n");
+    scanf("%d", &pontosTuristicos);
 
-        printf("Número de Pontos Turísticos: ");
-        scanf("%d", &cartas[i].pontosTuristicos);
-    }
-
-    // Mostra as cartas
-    for (int i = 0; i < 2; i++) {
-        printf("\n--- Carta %d ---\n", i + 1);
-        printf("Estado: %c\n", cartas[i].estado);
-        printf("Código: %s\n", cartas[i].codigo);
-        printf("Nome da Cidade: %s\n", cartas[i].cidade);
-        printf("População: %d\n", cartas[i].populacao);
-        printf("Área: %.2f km²\n", cartas[i].area);
-        printf("PIB: %.2f bilhões de reais\n", cartas[i].pib);
-        printf("Número de Pontos Turísticos: %d\n", cartas[i].pontosTuristicos);
-    }
+    printf("carta 1! \n");
+    printf("estado: %s \n", estado);
+    printf("codigo de carta: %s%s \n", estado, codigo);
+    printf("cidade: %s \n", cidade);
+    printf("habitantes: %d \n" ,população);
+    printf("area: %f \n", area);
+    printf("pib: %f \n", pib);
+    printf("pontos Turisticos: %d \n", pontosTuristicos);
 
     return 0;
 }
-    
+
